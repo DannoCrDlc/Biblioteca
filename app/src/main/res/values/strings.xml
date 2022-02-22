@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Biblioteca</string>
+    <string name="nuevo_perfil">Nuevo perfil</string>
+    <string name="nombre">Nombre</string>
+    <string name="example_example_com">example@example.com</string>
+    <string name="telefono">Telefono</string>
+    <string name="todo">TODO</string>
+    <string name="guardar">Guardar</string>
+    <string name="editar">Editar</string>
+    <string name="agregar">Agregar</string>
+    <string name="borrar">Borrar</string>
+    <string name="titulo">Titulo</string>
+    <string name="autor">Autor</string>
+    <string name="editorial">Editorial</string>
+    <string name="agregar_editar_libro">Agregar/Editar libro</string>
+    <string name="a_o">Año</string>
+</resources>
