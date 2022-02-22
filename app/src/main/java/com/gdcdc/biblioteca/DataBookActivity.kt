@@ -13,6 +13,8 @@ class DataBookActivity : AppCompatActivity() {
     lateinit var tituloTxt: EditText
     lateinit var autorTxt: EditText
     lateinit var editorialTxt: EditText
+    lateinit var etCategoria: EditText
+    lateinit var etPrecio: EditText
     lateinit var annioTxt: EditText
     lateinit var bookImage: ImageView
     lateinit var bundle: Bundle
@@ -26,11 +28,12 @@ class DataBookActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_data_book)
         bundle = intent.extras!!
-        val intent = Intent(this, DataBookActivity::class.java)
         tituloTxt = findViewById(R.id.tituloTxt)
         autorTxt = findViewById(R.id.autorTxt)
         editorialTxt = findViewById(R.id.editorialTxt)
         annioTxt = findViewById(R.id.annioTxt)
+        etCategoria = findViewById(R.id.etCategoria)
+        etPrecio = findViewById(R.id.etPrecio)
         bookImage = findViewById(R.id.bookImage)
         guardarBtn = findViewById(R.id.guardarBtn)
         tituloLbl = findViewById(R.id.titleLbl)
@@ -60,6 +63,8 @@ class DataBookActivity : AppCompatActivity() {
         autorTxt.setText(book.autor)
         editorialTxt.setText(book.editorial)
         annioTxt.setText(book.annio)
+        etCategoria.setText(book.categoria)
+        etPrecio.setText(book.precio)
         uri = book.foto
     }
 
@@ -70,6 +75,8 @@ class DataBookActivity : AppCompatActivity() {
             autorTxt.text.toString(),
             editorialTxt.text.toString(),
             annioTxt.text.toString(),
+            etCategoria.text.toString(),
+            etPrecio.text.toString(),
             uri
         )
         val intent = Intent(this, BooksActivity::class.java).apply {
