@@ -11,5 +11,7 @@ data class Book(
     var autor: String,
     var editorial: String,
     var annio: String,
+    var categoria: String,
+    var precio: String,
     var foto: Uri
-    ): Parcelable
+): Parcelable

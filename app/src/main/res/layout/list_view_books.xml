@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mainLayout"
     android:layout_width="match_parent"
-    android:layout_height="130dp"
+    android:layout_height="240dp"
     android:background="@color/white"
     android:orientation="horizontal">
 
@@ -31,19 +31,66 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/nameTxt"
+        android:id="@+id/tvTitulo"
         android:layout_width="169dp"
         android:layout_height="85dp"
         android:layout_marginStart="12dp"
         android:gravity="center_vertical"
         android:inputType="textMultiLine"
-        android:text="@string/nombre"
+        android:text="@string/titulo"
         android:textColor="@color/dark"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/duelistImage"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.511" />
+        app:layout_constraintVertical_bias="0.174" />
+
+    <TextView
+        android:id="@+id/tvAutor"
+        android:layout_width="283dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:gravity="center_vertical"
+        android:inputType="textMultiLine"
+        android:scrollHorizontally="true"
+        android:text="@string/autor"
+        android:textColor="@color/dark"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/duelistImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.635" />
+
+    <TextView
+        android:id="@+id/tvEditorial"
+        android:layout_width="253dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:gravity="center_vertical"
+        android:inputType="textMultiLine"
+        android:scrollHorizontally="true"
+        android:text="@string/editorial"
+        android:textColor="@color/dark"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.917" />
+
+    <TextView
+        android:id="@+id/tvAnnio"
+        android:layout_width="93dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="200dp"
+        android:gravity="center_vertical"
+        android:inputType="textMultiLine"
+        android:text="@string/a_o"
+        android:textColor="@color/dark"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/duelistImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.917" />
 
     <Button
         android:id="@+id/editBtn"
@@ -55,7 +102,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/nameTxt"
+        app:layout_constraintStart_toEndOf="@+id/tvTitulo"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.509" />
+        app:layout_constraintVertical_bias="0.229" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -73,7 +73,7 @@ class BooksActivity : AppCompatActivity(), CustomAdapter.OnDuelistClickListener,
         response = Response(listBooks)
         booksSaved = arrayOf(response)
         val intent = Intent(this, DataBookActivity::class.java).apply {
-            putExtra("book", Book("","","","","",uri))
+            putExtra("book", Book("","","","","","","",uri))
             putExtra("idBook", "${listBooks.size + 1}")
             putExtra("booksSaved", booksSaved)
             putExtra("mode", "I")
@@ -144,6 +144,8 @@ class BooksActivity : AppCompatActivity(), CustomAdapter.OnDuelistClickListener,
                 telefonoTxt.text.toString(),
                 correoTxt.text.toString(),
                 "",
+                "",
+                "",
                 uri
             )
             if (idSelect.toInt() > listBooks.size) {
@@ -169,6 +171,8 @@ class BooksActivity : AppCompatActivity(), CustomAdapter.OnDuelistClickListener,
                 "Miguel de Cervantes",
                 "Real academia española",
                 "2012",
+                "Novela clasica",
+                "$300",
                 Uri.parse("https://www.loqueleo.com/es/uploads/2016/02/resized/800_9788468025384.jpg")
             ),
         )
@@ -179,6 +183,8 @@ class BooksActivity : AppCompatActivity(), CustomAdapter.OnDuelistClickListener,
                 "Anonimo",
                 "Berlibro",
                 "2002",
+                "Cuentos",
+                "$250",
                 Uri.parse("https://www.elsotano.com/imagenes_grandes/9788445/978844590983.JPG")
             )
         )
@@ -189,6 +195,8 @@ class BooksActivity : AppCompatActivity(), CustomAdapter.OnDuelistClickListener,
                 "Jose Emilio Pacheco",
                 "ERA",
                 "2006",
+                "Novela",
+                "$100",
                 Uri.parse("https://http2.mlstatic.com/las-batallas-en-el-desierto-jose-emilio-pacheco-firmado-D_NQ_NP_192101-MLM20277256621_042015-F.jpg")
             )
         )
