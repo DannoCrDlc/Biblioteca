@@ -32,6 +32,9 @@ class CustomAdapter(
         Glide.with(context).load(book.foto).into(viewHolder.itemImagen);
         viewHolder.idBook.text = book.id
         viewHolder.itemNam.text = book.titulo
+        viewHolder.tvAutor.text = book.autor
+        viewHolder.tvEditorial.text = book.editorial
+        viewHolder.tvAnnio.text = book.annio
 
     }
 
@@ -42,13 +45,19 @@ class CustomAdapter(
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var itemImagen: ImageView
         var itemNam: TextView
+        var tvAutor: TextView
+        var tvEditorial: TextView
+        var tvAnnio: TextView
         var buttonEdit: Button
         var idBook: TextView
         var mainLayout: ConstraintLayout
 
         init {
             itemImagen = itemView.findViewById(R.id.duelistImage)
-            itemNam = itemView.findViewById(R.id.nameTxt)
+            itemNam = itemView.findViewById(R.id.tvTitulo)
+            tvAutor = itemView.findViewById(R.id.tvAutor)
+            tvEditorial = itemView.findViewById(R.id.tvEditorial)
+            tvAnnio = itemView.findViewById(R.id.tvAnnio)
             buttonEdit = itemView.findViewById(R.id.editBtn)
             idBook = itemView.findViewById(R.id.idDuelist)
             mainLayout = itemView.findViewById(R.id.mainLayout)
